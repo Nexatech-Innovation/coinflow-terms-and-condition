@@ -1,1 +1,441 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoinFlow - Terms & Conditions</title>
+
+  <style>
+    :root {
+      --primary: #FFA07A;
+      --primary-dark: #ff8c5e;
+      --primary-light: #ffe0d2;
+      --text: #1f2937;
+      --gray: #4b5563;
+      --light: #f9fafb;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: linear-gradient(to bottom, var(--light) 0%, #f1f5f9 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 6rem 1rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom-left-radius: 50% 15%;
+      border-bottom-right-radius: 50% 15%;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.25) 0%, transparent 50%);
+    }
+
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -2px;
+      margin-bottom: 0.8rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      opacity: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .updated {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      margin: -4rem auto 4rem;
+      padding: 3.5rem 2.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      color: var(--gray);
+      margin-bottom: 2.5rem;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s forwards;
+    }
+
+    section:nth-child(1) { animation-delay: 0.1s; }
+    section:nth-child(2) { animation-delay: 0.2s; }
+    section:nth-child(3) { animation-delay: 0.3s; }
+    section:nth-child(4) { animation-delay: 0.4s; }
+    section:nth-child(5) { animation-delay: 0.5s; }
+    section:nth-child(6) { animation-delay: 0.6s; }
+    section:nth-child(7) { animation-delay: 0.7s; }
+    section:nth-child(8) { animation-delay: 0.8s; }
+    section:nth-child(9) { animation-delay: 0.9s; }
+    section:nth-child(10) { animation-delay: 1.0s; }
+    section:nth-child(11) { animation-delay: 1.1s; }
+    section:nth-child(12) { animation-delay: 1.2s; }
+    section:nth-child(13) { animation-delay: 1.3s; }
+    section:nth-child(14) { animation-delay: 1.4s; }
+    section:nth-child(15) { animation-delay: 1.5s; }
+    section:nth-child(16) { animation-delay: 1.6s; }
+    section:nth-child(17) { animation-delay: 1.7s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1.2rem;
+      position: relative;
+      padding-left: 1.8rem;
+    }
+
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+      width: 6px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    h3 {
+      color: var(--primary-dark);
+      font-size: 1.35rem;
+      margin: 2rem 0 1rem;
+    }
+
+    p, li {
+      color: var(--gray);
+      font-size: 1.08rem;
+    }
+
+    ul, ol {
+      margin: 1.4rem 0 1.4rem 2rem;
+    }
+
+    li {
+      margin-bottom: 0.9rem;
+    }
+
+    .important {
+      background: var(--primary-light);
+      border-left: 5px solid var(--primary);
+      padding: 1.4rem 1.8rem;
+      margin: 1.8rem 0;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    .highlight {
+      background: rgba(255,160,122,0.15);
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    .contact-box {
+      background: var(--light);
+      border: 2px dashed var(--primary);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 4rem 0 3rem;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 5rem;
+      color: var(--gray);
+      font-size: 0.95rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 5rem 1rem 4rem;
+      }
+      .logo {
+        font-size: 2.8rem;
+      }
+      .title {
+        font-size: 2.3rem;
+      }
+      main {
+        margin: -3.5rem 1rem 3rem;
+        padding: 2.5rem 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">CoinFlow</div>
+      <p class="tagline">Fast • Secure • Convenient Payments</p>
+      <h1 class="title">Terms & Conditions</h1>
+      <p class="updated">Last Updated: February 09, 2026</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <p class="intro">
+        Welcome to CoinFlow. These Terms and Conditions ("Terms") govern your access to and use of the CoinFlow mobile application, website, and related services (collectively, the “Service”), operated by CoinFlow Inc. (“CoinFlow,” “we,” “our,” or “us”).
+        By creating an account or using CoinFlow, you agree to be bound by these Terms.
+      </p>
+
+      <section>
+        <h2>1. DESCRIPTION OF SERVICE</h2>
+        <p>CoinFlow is a digital utility payment platform that enables users to:</p>
+        <ul>
+          <li>Fund a digital wallet</li>
+          <li>Purchase airtime and data bundles</li>
+          <li>Pay utility and bill services</li>
+          <li>Perform identity-related searches (e.g., NIN/BVN verification where available)</li>
+        </ul>
+        <div class="important">
+          CoinFlow does not directly provide telecom or utility services. We act as a payment facilitator connecting users to third-party service providers.
+        </div>
+      </section>
+
+      <section>
+        <h2>2. ELIGIBILITY</h2>
+        <p>To use CoinFlow, you must:</p>
+        <ul>
+          <li>Be at least 18 years old</li>
+          <li>Provide accurate and complete registration information</li>
+          <li>Not be barred from using financial services under any applicable law</li>
+        </ul>
+        <p>We reserve the right to refuse service, suspend accounts, or terminate users who violate these Terms.</p>
+      </section>
+
+      <section>
+        <h2>3. ACCOUNT REGISTRATION & SECURITY</h2>
+        <p>You agree to:</p>
+        <ul>
+          <li>Provide true and up-to-date information</li>
+          <li>Keep your login credentials confidential</li>
+          <li>Notify us immediately of any unauthorized access</li>
+        </ul>
+        <p>You are fully responsible for all activities under your account. CoinFlow will not be liable for losses caused by your failure to secure your login details.</p>
+      </section>
+
+      <section>
+        <h2>4. WALLET FUNDING</h2>
+        <p>Users may fund their CoinFlow wallet through approved payment gateways.</p>
+        <div class="important">
+          Important Notes:
+          <ul>
+            <li>CoinFlow uses third-party payment processors</li>
+            <li>Funding delays caused by banks or gateways are outside our direct control</li>
+            <li>Users must ensure payment details are correct before confirming transactions</li>
+            <li>CoinFlow reserves the right to hold or reverse funds where fraud or error is suspected.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. PAYMENTS & TRANSACTIONS</h2>
+        <p>When you make a payment:</p>
+        <ul>
+          <li>You authorize CoinFlow to deduct funds from your wallet</li>
+          <li>Transactions are processed electronically and may be subject to delays from service providers</li>
+        </ul>
+        <h3>Failed Transactions</h3>
+        <p>If a transaction fails but your wallet is debited:</p>
+        <ul>
+          <li>A reversal will be processed after confirmation from the provider</li>
+          <li>Reversals may take minutes to several business days, depending on the provider</li>
+        </ul>
+        <p>CoinFlow is not liable for losses resulting from:</p>
+        <ul>
+          <li>Incorrect numbers entered by the user</li>
+          <li>Service provider downtime</li>
+          <li>Network issues beyond our control</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. FEES AND CHARGES</h2>
+        <p>CoinFlow may charge:</p>
+        <ul>
+          <li>Service fees</li>
+          <li>Processing fees</li>
+          <li>Convenience fees</li>
+        </ul>
+        <p>All applicable fees will be shown before transaction confirmation. Fees may change at any time with notice via the app.</p>
+      </section>
+
+      <section>
+        <h2>7. REFUNDS & REVERSALS</h2>
+        <p>Refunds are only applicable when:</p>
+        <ul>
+          <li>A transaction fails and the service is not delivered</li>
+          <li>Duplicate charges occur</li>
+          <li>A technical error is confirmed</li>
+        </ul>
+        <p>Refunds are not guaranteed when:</p>
+        <ul>
+          <li>The user enters the wrong phone number, meter number, or account details</li>
+          <li>Services have already been successfully delivered</li>
+        </ul>
+        <p>Refund timelines depend on third-party providers and payment processors.</p>
+      </section>
+
+      <section>
+        <h2>8. PROHIBITED USE</h2>
+        <p>You agree not to use CoinFlow for:</p>
+        <ul>
+          <li>Fraudulent transactions</li>
+          <li>Money laundering or illegal financial activity</li>
+          <li>Identity theft or impersonation</li>
+          <li>Funding illegal services or activities</li>
+        </ul>
+        <p>CoinFlow reserves the right to freeze accounts and report suspicious activity to relevant authorities.</p>
+      </section>
+
+      <section>
+        <h2>9. ACCOUNT SUSPENSION OR TERMINATION</h2>
+        <p>We may suspend or permanently terminate accounts if we detect:</p>
+        <ul>
+          <li>Fraud or suspicious activity</li>
+          <li>Abuse of promotions or bonuses</li>
+          <li>Violation of these Terms</li>
+        </ul>
+        <p>Funds in suspended accounts may be held pending investigation.</p>
+      </section>
+
+      <section>
+        <h2>10. THIRD-PARTY SERVICES</h2>
+        <p>CoinFlow relies on external service providers including:</p>
+        <ul>
+          <li>Telecom operators</li>
+          <li>Utility companies</li>
+          <li>Payment gateways</li>
+          <li>Identity verification services</li>
+        </ul>
+        <p>We are not responsible for the performance, downtime, or errors of third-party services.</p>
+      </section>
+
+      <section>
+        <h2>11. LIMITATION OF LIABILITY</h2>
+        <p>To the maximum extent permitted by law, CoinFlow shall not be liable for:</p>
+        <ul>
+          <li>Indirect or consequential damages</li>
+          <li>Loss of profits or data</li>
+          <li>Service interruptions beyond our control</li>
+        </ul>
+        <p>Our total liability shall not exceed the total fees paid by you in the 30 days preceding the claim.</p>
+      </section>
+
+      <section>
+        <h2>12. PRIVACY</h2>
+        <p>Your use of CoinFlow is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal data.</p>
+      </section>
+
+      <section>
+        <h2>13. INTELLECTUAL PROPERTY</h2>
+        <p>All content, branding, logos, and software in CoinFlow are owned by CoinFlow Inc. You may not copy, modify, distribute, or exploit any part of the Service without permission.</p>
+      </section>
+
+      <section>
+        <h2>14. SERVICE AVAILABILITY</h2>
+        <p>We strive to keep CoinFlow available at all times but do not guarantee uninterrupted service. Maintenance, upgrades, or technical issues may cause temporary downtime.</p>
+      </section>
+
+      <section>
+        <h2>15. CHANGES TO TERMS</h2>
+        <p>CoinFlow may update these Terms at any time. Continued use of the app after changes means you accept the revised Terms.</p>
+      </section>
+
+      <section>
+        <h2>16. GOVERNING LAW</h2>
+        <p>These Terms shall be governed by the laws of the jurisdiction where CoinFlow operates. Any disputes shall be resolved through the appropriate courts of that jurisdiction.</p>
+      </section>
+
+      <section>
+        <h2>17. CONTACT INFORMATION</h2>
+        <div class="contact-box">
+          <p style="font-size: 1.15rem; margin-bottom: 1.2rem;">For support or complaints, contact us at:</p>
+          <p><strong>Email:</strong> <a href="mailto:support@coinflowapp.com">support@coinflowapp.com</a></p>
+          <p style="margin-top: 1rem;"><strong>In-App Support:</strong> Available via the Help section</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 CoinFlow Inc. All rights reserved.</p>
+      <p>Secure • Reliable • Made for You</p>
+    </footer>
+  </div>
+
+</body>
+</html>
